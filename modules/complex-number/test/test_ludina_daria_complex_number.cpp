@@ -1,6 +1,7 @@
 // Copyright 2021 Ludina Daria
 
 #include <gtest/gtest.h>
+
 #include "include/complex_number.h"
 
 TEST(Ludina_Daria_ComplexNumberTest, Division) {
@@ -18,7 +19,7 @@ TEST(Ludina_Daria_ComplexNumberTest, Division) {
   ASSERT_EQ(res, z1 / z2);
 }
 
-TEST(Ludina_Daria_ComplexNumberTest, Check_Commutability) {
+TEST(Ludina_Daria_ComplexNumberTest, Check_Commutability_Sum) {
   // Arrange
   double re1 = 1.0, im1 = 2.0;
   double re2 = 0.4, im2 = 3.0;
@@ -34,7 +35,7 @@ TEST(Ludina_Daria_ComplexNumberTest, Check_Commutability) {
   ASSERT_EQ(res2, res1);
 }
 
-TEST(Ludina_Daria_ComplexNumberTest, Check_Associativity) {
+TEST(Ludina_Daria_ComplexNumberTest, Check_Associativity_Sum) {
   // Arrange
   double re1 = 1.0, im1 = 2.0;
   double re2 = 2.0, im2 = 3.0;
@@ -62,5 +63,5 @@ TEST(Ludina_Daria_ComplexNumberTest, Can_Equal_False) {
   res = z1 == z2;
 
   // Assert
-  EXPECT_EQ(res, false);
+  ASSERT_FALSE(res);
 }
