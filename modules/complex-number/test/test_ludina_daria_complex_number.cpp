@@ -52,16 +52,3 @@ TEST(Ludina_Daria_ComplexNumberTest, Check_Associativity_Sum) {
   // Assert
   ASSERT_EQ(res1, res2);
 }
-
-TEST(Ludina_Daria_ComplexNumberTest, Can_Equal_False) {
-  // Arrange
-  ComplexNumber z1{ 2, 3 };
-  ComplexNumber z2{ -1, 1 };
-  bool res;
-
-  // Act
-  res = z1 == z2;
-
-  // Assert
-  ASSERT_FALSE(res);
-}
