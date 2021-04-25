@@ -1,8 +1,10 @@
 // Copyright 2021 Ludina Daria
 
 #include <gtest/gtest.h>
+
 #include <string>
 #include <vector>
+
 #include "include/algorithm_huffmana.h"
 
 TEST(Algorithm_Huffmana, Can_Create_Histoghram_1) {

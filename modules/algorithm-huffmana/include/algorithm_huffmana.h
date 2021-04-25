@@ -32,5 +32,4 @@ class HuffmanTree {
      const std::vector<int> & hist);
 };
 
-
 #endif  // MODULES_ALGORITHM_HUFFMANA_INCLUDE_ALGORITHM_HUFFMANA_H_
