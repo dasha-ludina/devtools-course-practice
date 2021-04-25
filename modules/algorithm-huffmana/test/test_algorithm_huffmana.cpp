@@ -46,6 +46,7 @@ TEST(Algorithm_Huffmana, Can_Create_Encoding_Table_2) {
 
   ASSERT_EQ(expect, Tree.getSimbolCode('R'));
 }
+
 TEST(Algorithm_Huffmana, Huffman_Coding_Test_1) {
   std::string text = "AAASRERASR";
   std::vector<std::string> vec = { "1", "1", "1",
