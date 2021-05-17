@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <functional>
 #include <iterator>
+
 #include "include/mortgage_app.h"
 
 using ::testing::internal::RE;

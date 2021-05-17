@@ -9,6 +9,7 @@ class mortgage_app {
  public:
   mortgage_app();
   std::string operator()(int argc, const char** argv);
+
  private:
   void help(const char* appname, const char* message = "");
   bool validateNumberOfArguments(int argc, const char** argv);
