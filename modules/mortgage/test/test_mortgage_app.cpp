@@ -31,7 +31,7 @@ void Act(vector<string> args_) {
   }
 
   void Assert(std::string expected) {
-    EXPECT_TRUE(RE::PartialMatch(output_, RE(expected)));
+    ASSERT_TRUE(RE::PartialMatch(output_, RE(expected)));
   }
 
  private:

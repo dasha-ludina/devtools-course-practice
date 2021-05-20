@@ -14,7 +14,7 @@ class mortgage_app {
   void help(const char* appname, const char* message = "");
   bool validateNumberOfArguments(int argc, const char** argv);
   std::string message_;
-  using Arguments = struct {
+  struct Arguments {
     int c_cost;
     int d_downPayment;
     int c_creditTerm;

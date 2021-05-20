@@ -44,6 +44,9 @@ std::string mortgage_app::operator()(int argc, const char** argv) {
     args.d_downPayment =  static_cast<unsigned int>(std::stoul(argv[2]));
     args.c_creditTerm  =  static_cast<unsigned int>(std::stoul(argv[3]));
     args.i_interestRate = std::stod(argv[4]);
+    if (args.i_interestRate < 0) {
+      return std::string("Interest rate must be greater than zero!");
+    }
   }
      catch (std::exception &error) {
     return std::string("Wrong number format!");
